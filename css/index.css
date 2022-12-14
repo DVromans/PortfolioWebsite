@@ -1,0 +1,18 @@
+body {
+    background-image: url(../img/original_web.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-attachment: fixed;
+}
+/* foto groote aanpassen aan screen width */
+.fotoIndex {
+    max-width: 30%;
+}
+
+.background_blue {
+    background-color: #202326;
+    color: #9BB5BF;
+}
+
+
