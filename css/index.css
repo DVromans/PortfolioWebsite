@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: top;
     background-attachment: fixed;
+    
 }
 /* foto groote aanpassen aan screen width */
 .fotoIndex {
@@ -40,6 +41,9 @@ footer a {
     border-color:  #A67314;
     border-width: 0.062rem;
     border-style: solid;
+}
+.squareborder{
+    border-radius: 0;
 }
 
 @media only screen and (max-width: 768px)
