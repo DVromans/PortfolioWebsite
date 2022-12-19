@@ -10,11 +10,16 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark shadow-5-strong">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark shadow-5-strong">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Denzel Vromans</a>
         <button
@@ -42,7 +47,7 @@
               <a class="nav-link" href="ervaringen.html">Ervaringen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="hobby.html">hobby's</a>
+              <a class="nav-link" href="hobby.html">Hobby's</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -52,7 +57,7 @@
       </div>
     </nav>
     <main class="container">
-      <figure class="px-4 py-5 my-5">
+      <figure class="my-3">
         <img
           src="img/profielfoto.jpg"
           alt="profielfoto"
@@ -60,7 +65,9 @@
         />
       </figure>
       <!-- hero -->
-      <div class="px-4 py-5 my-5 text-center background_blue rounded-5">
+      <div
+        class="px-4 py-4 my-5 text-center background_blue rounded-5 borderyellow"
+      >
         <h1 class="display-5 fw-bold">Denzel Vromans</h1>
         <div class="col-md-8 mx-auto">
           <p class="lead mb-4">
@@ -69,64 +76,85 @@
             met fotografie, maar ook leer ik graag bij en verdiep mezelf in
             verschillende onderwerpen binnen de IT.
           </p>
+          <a href="contact.html" class="btn rounded-5 btncolor"> Contacteer mij</a>
         </div>
       </div>
 
       <!-- 3 kolommen en cards -->
       <section class="row">
         <div class="col-md-4 mb-3">
-          <div class="card rounded-5 background_blue">
+          <div class="card rounded-5 background_blue borderyellow">
             <img
-              src="img/beeld_gebouw.jpg"
+              src="img/cv.jpg"
               class="card-img-top rounded-5 p-1"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">CV</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary rounded-5">Go somewhere</a>
+              <a href="cv.html" class="btn rounded-5 btncolor">Gaan naar</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card rounded-5 background_blue">
+          <div class="card rounded-5 background_blue borderyellow">
             <img
-              src="img/beeld_gebouw.jpg"
+              src="img/ervaring.jpg"
               class="card-img-top rounded-5 p-1"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Ervaringen</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary rounded-5">Go somewhere</a>
+              <a href="ervaringen.html" class="btn rounded-5 btncolor">Gaan naar</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card rounded-5 background_blue">
+          <div class="card rounded-5 background_blue borderyellow">
             <img
-              src="img/beeld_gebouw.jpg"
+              src="img/fotografie.jpg"
               class="card-img-top rounded-5 p-1"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Hobby's</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary rounded-5">Go somewhere</a>
+              <a href="hobby.html" class="btn rounded-5 btncolor">Gaan naar</a>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <div class="container">
+      <footer class="row">
+        <div class="col-6 col-md-6 text-start">
+          <p>&copy; Denzel Vromans</p>
+        </div>
+        <div class="col-6 col-md-6 text-end">
+          <a
+            href="https://www.instagram.com/denzelvromans/"
+            class="text-decoration-none"
+            ><i class="bi bi-instagram"> Instagram</i></a
+          >
+          <span>|</span>
+          <a
+            href="https://www.pexels.com/nl-nl/@denzel-v-3779480/"
+            class="text-decoration-none"
+            ><i class="bi bi-camera"></i> Pexels</a
+          >
+        </div>
+      </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

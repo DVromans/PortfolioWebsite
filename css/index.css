@@ -7,12 +7,47 @@ body {
 }
 /* foto groote aanpassen aan screen width */
 .fotoIndex {
-    max-width: 30%;
+    max-width: 25%;
 }
 
 .background_blue {
     background-color: #202326;
     color: #9BB5BF;
 }
+
+footer {
+    color: #9BB5BF;
+}
+footer a {
+    color: #9BB5BF ;
+}
+
+.pexelslogo{
+    width: 16px ;
+    height: 21px;
+}
+
+.btncolor{
+    color: #202326;
+    background-color: #A67314;
+}
+.btncolor:hover{
+    color: #202326;
+    background-color: #a6731477;
+}
+
+.borderyellow{
+    border-color:  #A67314;
+    border-width: 0.062rem;
+    border-style: solid;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .fotoIndex {
+        max-width: 50%;
+    }
+}
+
 
 
