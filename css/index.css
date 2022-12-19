@@ -46,10 +46,10 @@ footer a {
     border-radius: 0;
 }
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 992px)
 {
     .fotoIndex {
-        max-width: 50%;
+        max-width: 40%;
     }
 }
 
