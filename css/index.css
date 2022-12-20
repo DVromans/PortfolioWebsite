@@ -1,17 +1,19 @@
 body {
+    background-color: #202326;
     background-image: url(../img/original_web.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: top;
     background-attachment: fixed;
-    
-}
-/* foto groote aanpassen aan screen width */
-.fotoIndex {
-    max-width: 25%;
+    font-family: 'Roboto';
 }
 
-.background_blue {
+/* foto groote aanpassen aan screen width */
+.fotoIndex {
+    max-width: 20%;
+}
+
+.backgroundblue {
     background-color: #202326;
     color: #9BB5BF;
 }
@@ -39,17 +41,25 @@ footer a {
 
 .borderyellow{
     border-color:  #A67314;
-    border-width: 0.062rem;
+    border-width: 0.15rem;
     border-style: solid;
 }
 .squareborder{
     border-radius: 0;
 }
+.imgcarousel{
+    width: 33.3%;
+}
+
+.uitlijnen {
+    text-align: justify;
+}
+
 
 @media only screen and (max-width: 992px)
 {
     .fotoIndex {
-        max-width: 40%;
+        max-width: 35%;
     }
 }
 

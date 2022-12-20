@@ -4,7 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.ico" type="image" sizes="16x16" />
+    <!-- icons -->
+    <link
+      rel="icon"
+      href="img/favicons/favicon-16x16.png"
+      type="image"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="img/favicons/favicon-32x32.png"
+      type="image"
+      sizes="32x32"
+    />
+    <link rel="icon" href="img/favicons/favicon.ico" type="icon" />
+    <link
+      rel="icon"
+      href="img/favicons/android-chrome-192x192.png"
+      type="image"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="img/favicons/android-chrome-512x512.png"
+      type="image"
+      sizes="512x512"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="img/favicons/apple-touch-icon.png"
+      type="image"
+    />
+    <!-- bootstrap en fonts -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,12 +47,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark shadow-5-strong">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Denzel Vromans</a>
+        <a class="navbar-brand">Denzel Vromans</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,18 +73,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cv.html">CV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ervaringen.html">Ervaringen</a>
+              <a class="nav-link" href="werkervaring.html">Werkervaring</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="hobby.html">Hobby's</a>
+              <a class="nav-link active" href="hobby.html">Hobby's</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -56,114 +91,138 @@
         </div>
       </div>
     </nav>
-    <div>
-      <h2>Interesses</h2>
-      <p>
-        Mijn interesse voor IT is ontstaan door op een jonge leeftijd te
-        beginnen gamen. Hierdoor ben ik begonnen met computers te bouwen en
-        hierdoor is mijn interesse voor IT blijven groeien. Hieruit is ook mijn
-        interesse voor fotografie verder uitgegroeid. Omdat ik zoveel met IT
-        bezig ben leer ik er altijd graag over bij en werk ik graag aan
-        projecten waarbij ik nog moet bijleren om het project af te maken.
-      </p>
+    <main class="container">
+      <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
+        <h2>Interesses</h2>
+        <p>
+          Mijn interesse voor IT is ontstaan door op een jonge leeftijd te
+          beginnen gamen. Hierdoor ben ik begonnen met computers te bouwen en
+          hierdoor is mijn interesse voor IT blijven groeien. Hieruit is ook mijn
+          interesse voor fotografie verder uitgegroeid. Omdat ik zoveel met IT
+          bezig ben leer ik er altijd graag over bij en werk ik graag aan
+          projecten waarbij ik nog moet bijleren om het project af te maken.
+        </p>
+      </section>
+      <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
+        <h2>Fotografie</h2>
+        <p>
+          Ik ben nu enkele maanden met fotografie bezig en focus me vooral op
+          landschap, macro en straatfotografie. De meeste foto's maak ik tijdens
+          wandelingen in lokale bossen en natuurreservaten. De foto's die ik maak
+          post ik op
+          <a href="https://www.pexels.com/nl-nl/@denzel-v-3779480/">Pexels</a>.
+          Pexels is een website die gratis stockfoto's aanbiedt. Alle foto's die
+          gebruikt zijn op deze website heb ik zelfgemaakt en komen van mijn
+          pagina op Pexels.
+        </p>
+      </section>
+      <div>
+        <img src="img/varen.jpg" alt="varen" width="33%" />
+        <img src="img/beeld_gebouw.jpg" alt="standbeeld bij gebouw" width="33%" />
+        <img src="img/beeld_water.jpg" alt="standbeeld bij de zee" width="33%" />
+        <img
+          src="img/gebouw.jpg"
+          alt="foto tussen drie gebouwen van de lucht"
+          width="33%"
+        />
+        <img
+          src="img/rode_paddenstenstoelen.jpg"
+          alt="rode paddenstoelen"
+          width="33%"
+        />
+        <img
+          src="img/kleine_paddenstoelen.jpg"
+          alt="kleine paddenstoelen"
+          width="33%"
+        />
+      </div>
+      <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
+        <h2>Camera gear</h2>
+        <p>
+          In deze lijst staat al het materiaal dat ik gebruik om foto's te gaan
+          maken
+        </p>
+  
+        <table border="1px" cellspacing="0px" cellpadding="5px">
+          <tr>
+            <th>Camera</th>
+            <td>Canon EOS 850d</td>
+          </tr>
+          <tr>
+            <th>Lens 1</th>
+            <td>Canon EF-S 18mm-55mm f/4-5.6</td>
+          </tr>
+          <tr>
+            <th>Lens 2</th>
+            <td>Canon EF-S 55mm-250mm f/4-5.6</td>
+          </tr>
+          <tr>
+            <th>Tripod</th>
+            <td>Rollei C5i carbon</td>
+          </tr>
+          <tr>
+            <th>Backpack</th>
+            <td>Thule Aspect</td>
+          </tr>
+        </table>
+      </section>
+  
+      <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
+        <h2>LightRoom & photoshop</h2>
+        <p>
+          Sinds ik met fotografie ben begonnen, ben ik ook gestart met het leren
+          van lightroom en photoshop. Voor mijn foto's te verbeteren gebruik ik
+          lightroom dit is gemakkelijk om te leren en te gebruiken om mijn foto's
+          te bewerken. photoshop heb ik tot nu toe alleen nog maar gebruikt om
+          panorama's en focus stacks te maken. Van photoshop kan ik nog veel
+          bijleren maar hiervoor moet ik het meer gebruiken.
+        </p>
+      </section>
+  
+      <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
+        <h2>Gamen</h2>
+        <p>
+          Zelf ben ik begonnen met gamen op een jonge leeftijd. ik ben begonnen
+          met gamen op Consoles en na een aantal jaar overgeschakeld naar een pc.
+          Door veel met games bezig te zijn heb ik interesse gekregen in IT en
+          zelf pc te bouwen.
+        </p>
+        <p>
+          Toen ik ben begonnen met gamen op een pc heb ik het spel Space Engineers
+          ontdekt wat nog steeds één van mijn favoriete games is. Door dit spel
+          ben ik begonnen met programmeren. Space engineers liet toe om gebruik te
+          maken van verschillende operators om aspecten in het spel te
+          automatiseren. Verder kon er ook gebruik gemaakt worden van C# om in het
+          spel scripts te schrijven om zodat er nog verder geautomatiseerd kon
+          worden of zelfs AI gemaakt kan worden. Hierdoor bleef het spel altijd
+          interessant. Omdat er zoveel mogelijkheden zijn in het spel is er ook
+          een community ontstaan die zorgde voor een groot aantal mods en scripts
+          om te gebruiken.
+        </p>
+      </section>
+    </main>
+    
+    <div class="container mt-auto">
+      <footer class="row">
+        <div class="col-6 col-md-6 text-start">
+          <p>&copy; Denzel Vromans</p>
+        </div>
+        <div class="col-6 col-md-6 text-end">
+          <a
+            href="https://www.instagram.com/denzelvromans/"
+            class="text-decoration-none"
+            ><i class="bi bi-instagram"></i> Instagram</a
+          >
+          <span>|</span>
+          <a
+            href="https://www.pexels.com/nl-nl/@denzel-v-3779480/"
+            class="text-decoration-none"
+            ><i class="bi bi-camera"></i> Pexels</a
+          >
+        </div>
+      </footer>
     </div>
-    <div>
-      <h2>Fotografie</h2>
-      <p>
-        Ik ben nu enkele maanden met fotografie bezig en focus me vooral op
-        landschap, macro en straatfotografie. De meeste foto's maak ik tijdens
-        wandelingen in lokale bossen en natuurreservaten. De foto's die ik maak
-        post ik op
-        <a href="https://www.pexels.com/nl-nl/@denzel-v-3779480/">Pexels</a>.
-        Pexels is een website die gratis stockfoto's aanbiedt. Alle foto's die
-        gebruikt zijn op deze website heb ik zelfgemaakt en komen van mijn
-        pagina op Pexels.
-      </p>
-    </div>
-    <div>
-      <img src="img/varen.jpg" alt="varen" width="33%" />
-      <img src="img/beeld_gebouw.jpg" alt="standbeeld bij gebouw" width="33%" />
-      <img src="img/beeld_water.jpg" alt="standbeeld bij de zee" width="33%" />
-      <img
-        src="img/gebouw.jpg"
-        alt="foto tussen drie gebouwen van de lucht"
-        width="33%"
-      />
-      <img
-        src="img/rode_paddenstenstoelen.jpg"
-        alt="rode paddenstoelen"
-        width="33%"
-      />
-      <img
-        src="img/kleine_paddenstoelen.jpg"
-        alt="kleine paddenstoelen"
-        width="33%"
-      />
-    </div>
-    <div>
-      <h2>Camera gear</h2>
-      <p>
-        In deze lijst staat al het materiaal dat ik gebruik om foto's te gaan
-        maken
-      </p>
 
-      <table border="1px" cellspacing="0px" cellpadding="5px">
-        <tr>
-          <th>Camera</th>
-          <td>Canon EOS 850d</td>
-        </tr>
-        <tr>
-          <th>Lens 1</th>
-          <td>Canon EF-S 18mm-55mm f/4-5.6</td>
-        </tr>
-        <tr>
-          <th>Lens 2</th>
-          <td>Canon EF-S 55mm-250mm f/4-5.6</td>
-        </tr>
-        <tr>
-          <th>Tripod</th>
-          <td>Rollei C5i carbon</td>
-        </tr>
-        <tr>
-          <th>Backpack</th>
-          <td>Thule Aspect</td>
-        </tr>
-      </table>
-    </div>
-
-    <div>
-      <h2>LightRoom & photoshop</h2>
-      <p>
-        Sinds ik met fotografie ben begonnen, ben ik ook gestart met het leren
-        van lightroom en photoshop. Voor mijn foto's te verbeteren gebruik ik
-        lightroom dit is gemakkelijk om te leren en te gebruiken om mijn foto's
-        te bewerken. photoshop heb ik tot nu toe alleen nog maar gebruikt om
-        panorama's en focus stacks te maken. Van photoshop kan ik nog veel
-        bijleren maar hiervoor moet ik het meer gebruiken.
-      </p>
-    </div>
-
-    <div>
-      <h2>Gamen</h2>
-      <p>
-        Zelf ben ik begonnen met gamen op een jonge leeftijd. ik ben begonnen
-        met gamen op Consoles en na een aantal jaar overgeschakeld naar een pc.
-        Door veel met games bezig te zijn heb ik interesse gekregen in IT en
-        zelf pc te bouwen.
-      </p>
-      <p>
-        Toen ik ben begonnen met gamen op een pc heb ik het spel Space Engineers
-        ontdekt wat nog steeds één van mijn favoriete games is. Door dit spel
-        ben ik begonnen met programmeren. Space engineers liet toe om gebruik te
-        maken van verschillende operators om aspecten in het spel te
-        automatiseren. Verder kon er ook gebruik gemaakt worden van C# om in het
-        spel scripts te schrijven om zodat er nog verder geautomatiseerd kon
-        worden of zelfs AI gemaakt kan worden. Hierdoor bleef het spel altijd
-        interessant. Omdat er zoveel mogelijkheden zijn in het spel is er ook
-        een community ontstaan die zorgde voor een groot aantal mods en scripts
-        om te gebruiken.
-      </p>
-    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

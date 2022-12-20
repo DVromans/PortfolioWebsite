@@ -4,7 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.ico" type="image" sizes="16x16" />
+    <!-- icons -->
+    <link
+      rel="icon"
+      href="img/favicons/favicon-16x16.png"
+      type="image"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="img/favicons/favicon-32x32.png"
+      type="image"
+      sizes="32x32"
+    />
+    <link rel="icon" href="img/favicons/favicon.ico" type="icon" />
+    <link
+      rel="icon"
+      href="img/favicons/android-chrome-192x192.png"
+      type="image"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="img/favicons/android-chrome-512x512.png"
+      type="image"
+      sizes="512x512"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="img/favicons/apple-touch-icon.png"
+      type="image"
+    />
+    <!-- bootstrap en fonts -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,12 +47,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark shadow-5-strong">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Denzel Vromans</a>
+        <a class="navbar-brand">Denzel Vromans</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,21 +73,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cv.html">CV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ervaringen.html">Ervaringen</a>
+              <a class="nav-link" href="werkervaring.html">Werkervaring</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="hobby.html">Hobby's</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -123,6 +158,27 @@
         </li>
       </ul>
     </div>
+    <div class="container mt-auto">
+      <footer class="row">
+        <div class="col-6 col-md-6 text-start">
+          <p>&copy; Denzel Vromans</p>
+        </div>
+        <div class="col-6 col-md-6 text-end">
+          <a
+            href="https://www.instagram.com/denzelvromans/"
+            class="text-decoration-none"
+            ><i class="bi bi-instagram"></i> Instagram</a
+          >
+          <span>|</span>
+          <a
+            href="https://www.pexels.com/nl-nl/@denzel-v-3779480/"
+            class="text-decoration-none"
+            ><i class="bi bi-camera"></i> Pexels</a
+          >
+        </div>
+      </footer>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
