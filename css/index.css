@@ -39,8 +39,12 @@ footer a {
     background-color: #a6731477;
 }
 
+.linkcolor{
+    color:#A67314 ;
+}
+
 .borderyellow{
-    border-color:  #A67314;
+    border-color:  #a67314;
     border-width: 0.15rem;
     border-style: solid;
 }
@@ -55,6 +59,18 @@ footer a {
     text-align: justify;
 }
 
+textarea{
+    width: 100%;
+}
+
+.contactlu {
+    list-style-type: none;
+}
+
+.slidertext {
+    font-size: 2rem;
+    color: white;
+}
 
 @media only screen and (max-width: 992px)
 {

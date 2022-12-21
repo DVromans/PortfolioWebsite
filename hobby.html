@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- icons -->
     <link
       rel="icon"
       href="img/favicons/favicon-16x16.png"
@@ -35,7 +34,6 @@
       href="img/favicons/apple-touch-icon.png"
       type="image"
     />
-    <!-- bootstrap en fonts -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -56,7 +54,7 @@
     <title>Portfolio</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand">Denzel Vromans</a>
         <button
@@ -92,116 +90,244 @@
       </div>
     </nav>
     <main class="container">
+      <section class="backgroundblue rounded-3 borderyellow my-4">
+        <h1 class="text-center my-2">Hobby's</h1>
+      </section>
       <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
         <h2>Interesses</h2>
-        <p>
+        <p class="uitlijnen">
           Mijn interesse voor IT is ontstaan door op een jonge leeftijd te
           beginnen gamen. Hierdoor ben ik begonnen met computers te bouwen en
-          hierdoor is mijn interesse voor IT blijven groeien. Hieruit is ook mijn
-          interesse voor fotografie verder uitgegroeid. Omdat ik zoveel met IT
-          bezig ben leer ik er altijd graag over bij en werk ik graag aan
+          hierdoor is mijn interesse voor IT blijven groeien. Hieruit is ook
+          mijn interesse voor fotografie verder uitgegroeid. Omdat ik zoveel met
+          IT bezig ben leer ik er altijd graag over bij en werk ik graag aan
           projecten waarbij ik nog moet bijleren om het project af te maken.
         </p>
       </section>
-      <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
-        <h2>Fotografie</h2>
-        <p>
-          Ik ben nu enkele maanden met fotografie bezig en focus me vooral op
-          landschap, macro en straatfotografie. De meeste foto's maak ik tijdens
-          wandelingen in lokale bossen en natuurreservaten. De foto's die ik maak
-          post ik op
-          <a href="https://www.pexels.com/nl-nl/@denzel-v-3779480/">Pexels</a>.
-          Pexels is een website die gratis stockfoto's aanbiedt. Alle foto's die
-          gebruikt zijn op deze website heb ik zelfgemaakt en komen van mijn
-          pagina op Pexels.
-        </p>
+      <section
+        class="backgroundblue rounded-3 mb-4 py-3 px-1 borderyellow row container-fluid mx-0"
+      >
+        <div class="col-12 col-lg-3">
+          <h2>Fotografie</h2>
+          <p class="uitlijnen">
+            Ik ben nu enkele maanden met fotografie bezig en focus me vooral op
+            landschap, macro en straatfotografie. De meeste foto's maak ik
+            tijdens wandelingen in lokale bossen en natuurreservaten. De foto's
+            die ik maak post ik op
+            <a
+              href="https://www.pexels.com/nl-nl/@denzel-v-3779480/"
+              class="linkcolor text-decoration-none"
+              >Pexels</a
+            >. Pexels is een website die gratis stockfoto's aanbiedt. De meeste
+            foto's die gebruikt zijn op deze website heb ik zelfgemaakt en komen
+            van mijn pagina op Pexels.
+          </p>
+        </div>
+        <div class="col-12 col-lg-9">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-inner rounded-3">
+              <div class="carousel-item active">
+                <img src="img/varen.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Varen in bos</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/beeld_gebouw.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Beeldje boven aan een kerk in Barcelona</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/beeld_water.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>standbeeld aan het strand in Girona</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/gebouw.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Huizen in Girona</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/rode_paddenstenstoelen.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Rode paddenstoelen</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/kleine_paddenstoelen.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Kleine paddenstoelen op boomstronk</h5>
+                </div>
+              </div>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                  class=""
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
-      <div>
-        <img src="img/varen.jpg" alt="varen" width="33%" />
-        <img src="img/beeld_gebouw.jpg" alt="standbeeld bij gebouw" width="33%" />
-        <img src="img/beeld_water.jpg" alt="standbeeld bij de zee" width="33%" />
-        <img
-          src="img/gebouw.jpg"
-          alt="foto tussen drie gebouwen van de lucht"
-          width="33%"
-        />
-        <img
-          src="img/rode_paddenstenstoelen.jpg"
-          alt="rode paddenstoelen"
-          width="33%"
-        />
-        <img
-          src="img/kleine_paddenstoelen.jpg"
-          alt="kleine paddenstoelen"
-          width="33%"
-        />
-      </div>
-      <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
-        <h2>Camera gear</h2>
-        <p>
-          In deze lijst staat al het materiaal dat ik gebruik om foto's te gaan
-          maken
-        </p>
-  
-        <table border="1px" cellspacing="0px" cellpadding="5px">
-          <tr>
-            <th>Camera</th>
-            <td>Canon EOS 850d</td>
-          </tr>
-          <tr>
-            <th>Lens 1</th>
-            <td>Canon EF-S 18mm-55mm f/4-5.6</td>
-          </tr>
-          <tr>
-            <th>Lens 2</th>
-            <td>Canon EF-S 55mm-250mm f/4-5.6</td>
-          </tr>
-          <tr>
-            <th>Tripod</th>
-            <td>Rollei C5i carbon</td>
-          </tr>
-          <tr>
-            <th>Backpack</th>
-            <td>Thule Aspect</td>
-          </tr>
-        </table>
+      <section class="backgroundblue rounded-3 mb-4 p-3 row container-fluid mx-0 borderyellow">
+        <div class="col-12 col-lg-6">
+          <h2>Camera gear</h2>
+          <p class="uitlijnen">
+            In deze lijst staat al het materiaal dat ik gebruik om foto's te
+           maken.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6">
+
+          <div class="rounded-3 overflow-hidden borderyellow">
+          <table class="table table-dark mb-0 backgroundblue">
+            <thead class="rounded-3">
+              <tr>
+                <th scope="col">Camera Gear</th>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Camera</th>
+                <td>Canon EOS 850d</td>
+              </tr>
+              <tr>
+                <th scope="row">Lens 1</th>
+                <td>Canon EF-S 18mm-55mm f/4-5.6</td>
+              </tr>
+              <tr>
+                <th scope="row">Lens 2</th>
+                <td colspan="2">Canon EF-S 55mm-250mm f/4-5.6</td>
+              </tr>
+              <tr>
+                <th scope="row">Tripod</th>
+                <td colspan="2">Rollei C5i carbon</td>
+              </tr>
+              <tr>
+                <th scope="row">Backpack</th>
+                <td colspan="2">Thule Aspect</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
       </section>
-  
       <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
-        <h2>LightRoom & photoshop</h2>
-        <p>
+        <h2>Lightroom & photoshop</h2>
+        <p class="uitlijnen">
           Sinds ik met fotografie ben begonnen, ben ik ook gestart met het leren
           van lightroom en photoshop. Voor mijn foto's te verbeteren gebruik ik
-          lightroom dit is gemakkelijk om te leren en te gebruiken om mijn foto's
-          te bewerken. photoshop heb ik tot nu toe alleen nog maar gebruikt om
-          panorama's en focus stacks te maken. Van photoshop kan ik nog veel
-          bijleren maar hiervoor moet ik het meer gebruiken.
+          lightroom dit is gemakkelijk om te leren en te gebruiken om mijn
+          foto's te bewerken. photoshop heb ik tot nu toe alleen nog maar
+          gebruikt om panorama's en focus stacks te maken. Van photoshop kan ik
+          nog veel bijleren maar hiervoor moet ik het meer gebruiken.
         </p>
       </section>
-  
       <section class="backgroundblue rounded-3 mb-4 p-3 borderyellow">
-        <h2>Gamen</h2>
-        <p>
+        <h2>Gaming</h2>
+        <p class="uitlijnen">
           Zelf ben ik begonnen met gamen op een jonge leeftijd. ik ben begonnen
-          met gamen op Consoles en na een aantal jaar overgeschakeld naar een pc.
-          Door veel met games bezig te zijn heb ik interesse gekregen in IT en
-          zelf pc te bouwen.
+          met gamen op Consoles en na een aantal jaar overgeschakeld naar een
+          pc. Door veel met games bezig te zijn heb ik interesse gekregen in IT
+          en om zelf een pc te bouwen.
         </p>
-        <p>
-          Toen ik ben begonnen met gamen op een pc heb ik het spel Space Engineers
-          ontdekt wat nog steeds één van mijn favoriete games is. Door dit spel
-          ben ik begonnen met programmeren. Space engineers liet toe om gebruik te
-          maken van verschillende operators om aspecten in het spel te
-          automatiseren. Verder kon er ook gebruik gemaakt worden van C# om in het
-          spel scripts te schrijven om zodat er nog verder geautomatiseerd kon
-          worden of zelfs AI gemaakt kan worden. Hierdoor bleef het spel altijd
-          interessant. Omdat er zoveel mogelijkheden zijn in het spel is er ook
-          een community ontstaan die zorgde voor een groot aantal mods en scripts
-          om te gebruiken.
+        <p class="uitlijnen">
+          Toen ik ben begon met gamen op een pc heb ik het spel Space
+          Engineers ontdekt wat nog steeds één van mijn favoriete games is. Door
+          dit spel ben ik begonnen met programmeren. Space engineers liet toe om
+          gebruik te maken van verschillende operators om aspecten in het spel
+          te automatiseren. Verder kon er ook gebruik gemaakt worden van C# om
+          in het spel scripts te schrijven om zodat er nog verder
+          geautomatiseerd kon worden of zelfs AI gemaakt kan worden. Hierdoor
+          bleef het spel altijd interessant. Omdat er zoveel mogelijkheden zijn
+          in het spel is er ook een community ontstaan die zorgde voor een groot
+          aantal mods en scripts om te gebruiken.
         </p>
       </section>
     </main>
-    
     <div class="container mt-auto">
       <footer class="row">
         <div class="col-6 col-md-6 text-start">
@@ -222,7 +348,6 @@
         </div>
       </footer>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

@@ -56,7 +56,7 @@
     <title>Portfolio</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand">Denzel Vromans</a>
         <button
@@ -91,55 +91,107 @@
         </div>
       </div>
     </nav>
-    <form action="#" method="post">
-      <label for="inputNaam">Naam</label><br />
-      <input
-        type="text"
-        name="inputNaam"
-        id="inputNaam"
-        placeholder="Naam"
-      /><br />
+    <!-- main -->
+    <main class="container">
+      <div class="mx-0">
+        <section
+          class="backgroundblue borderyellow rounded-3 my-4 p-3 text-center"
+        >
+          <h1>Mijn gegevens</h1>
+          <p class="mb-2">
+            <i class="bi bi-envelope"></i> r0842959@student.thomasmore.be
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-house"></i> Kleinhoefstraat 4, 2440 Geel
+          </p>
 
-      <label for="inputVoornaam">Voornaam</label><br />
-      <input
-        type="text"
-        name="inputVoornaam"
-        id="inputVoornaam"
-        placeholder="Voornaam"
-      /><br />
+          <p class="mb-2"><i class="bi bi-phone"></i> +32xxxxxxxxx</p>
 
-      <label for="inputEmail">Email</label><br />
-      <input
-        type="email"
-        name="inputEmail"
-        id="inputEmail"
-        placeholder="Email"
-      /><br />
+          <a href="mailto:r0842959@student.thomasmore.be" class="btn btncolor"
+            ><i class="bi bi-envelope"></i> E-mail</a
+          >
+        </section>
+        <section class="backgroundblue rounded-3 borderyellow my-4">
+          <h1 class="px-3 pt-3 pb-0 mb-0">Stel uw vraag</h1>
+          <form
+            class="p-3"
+            method="post"
+            action="https://tm-statweb.be/forms.php"
+            autocomplete="off"
+          >
+            <div class="row">
+              <div class="mb-2 col-12 col-lg-6 mb-0">
+                <label for="InputNaam" class="form-label">Naam</label>
+                <input
+                  type="text"
+                  class="form-control rounded-3 overflow-hidden"
+                  id="InputNaam"
+                  placeholder="Naam"
+                  name="InputNaam"
+                  required
+                />
+              </div>
+              <div class="mb-2 col-12 col-lg-6 mb-0">
+                <label for="InputVoornaam" class="form-label">Voornaam</label>
+                <input
+                  type="text"
+                  class="form-control rounded-3 overflow-hidden"
+                  id="InputVoornaam"
+                  placeholder="Voornaam"
+                  name="InputVoornaam"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-0 col-12 col-lg-6">
+                <label for="InputEmail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control rounded-3 overflow-hidden"
+                  id="InputEmail"
+                  placeholder="example@mail.com"
+                  name="InputEmail"
+                />
+              </div>
+              <div class="mb-0 col-12 col-lg-6">
+                <label for="InputSkill" class="form-label"
+                  >Interesse in welke skill</label
+                >
+                <select
+                  class="form-select mb-2 rounded-3 overflow-hidden"
+                  id="InputSkill"
+                  name="InputSkill"
+                >
+                  <option selected>Kies een skill</option>
+                  <option value="1">C#</option>
+                  <option value="2">HTML</option>
+                  <option value="3">CSS</option>
+                  <option value="4">Visual Basic</option>
+                  <option value="5">bootstrap</option>
+                </select>
+              </div>
+            </div>
 
-      <label for="inputNaam">Telefoon nummer</label><br />
-      <input type="" name="inputNaam" id="inputNaam" placeholder="Naam" /><br />
-
-      <label for="inputOnderwerp">Onderwerp</label><br />
-      <input
-        type="text"
-        name="inputOnderwerp"
-        id="inputOnderwerp"
-        placeholder="Onderwerp"
-      /><br />
-
-      <label for="inputBericht">Bericht</label><br />
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Bericht"
-      ></textarea
-      ><br />
-
-      <input type="submit" value="Verstuur" />
-    </form>
-
+            <div class="mb-2">
+              <label for="InputVraag" class="form-label"> Uw vraag</label>
+              <textarea
+                id="InputVraag"
+                cols="30"
+                rows="5"
+                class="rounded-3 overflow-hidden p-2"
+                placeholder="Stel uw vraag"
+                name="InputVraag"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btncolor">Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <!--     
     <div>
       <h2>Mijn Gegevens</h2>
       <ul>
@@ -157,7 +209,7 @@
           >
         </li>
       </ul>
-    </div>
+    </div> -->
     <div class="container mt-auto">
       <footer class="row">
         <div class="col-6 col-md-6 text-start">
